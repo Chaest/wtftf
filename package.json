@@ -1,0 +1,41 @@
+{
+  "name": "wtf-why-wont-md-handle-hcl-fcs",
+  "displayName": "Pissed",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "me",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/Chaest/wtftf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chaest/wtftfs/issues"
+  },
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "hcl-injection"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hcl-injection",
+        "scopeName": "markdown.hcl.codeblock",
+        "path": "./syntaxes/hcl.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.hcl": "hcl"
+        }
+      }
+    ]
+  },
+  "dependencies": {  }
+}
